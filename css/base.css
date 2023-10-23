@@ -6,19 +6,16 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font: 400 15px/1.8 "Lato", sans-serif; */
-  font-family: 'D-DIN', sans-serif;
   color: #ffffff;
+  background-color: black;
   font-size: 18px;
 }
-
 
 .bgimg-1,
 .bgimg-2,
 .bgimg-3,
 .bgimg-4 {
   width: 100%;
-  /* opacity: 0.65; */
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -28,7 +25,6 @@ html {
 
 .bgimg-1 {
   background-image: url("/images/front-blur.png");
-  /* min-height: 100%; */
   display: flex;
 }
 
@@ -56,6 +52,7 @@ h1{
   font-family: 'Oswald', sans-serif;
 }
 
+/******************************** second section started from here **************************/
 
 .bgimg-2 {
   background-image: url("/images/front-clear.png");
@@ -81,6 +78,8 @@ h1{
   font-family: 'Oswald', sans-serif;
 }
 
+/********************************* second section ends here ********************************/
+
 .bgimg-3 {
   background-image: url("/images/front-blur.png");
   height: 100vh;
@@ -89,6 +88,7 @@ h1{
   background-image: url("/images/final-girl.png");
   height: 100vh;
 }
+/*************************** understand it ************************************/
 /* .bgimg-2 {
   width: 100%;
   position: relative;
