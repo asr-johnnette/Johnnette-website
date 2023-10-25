@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trying to create</title>
+    <link rel="stylesheet" href="/css/humains-trial.css" />
+  </head>
+  <body>
+    <div class="bgimg-1">
+      <div class="left1">
+        <h1>Johnnette <span> Technology </span></h1>
+        <p class="johnnette-text">
+          Johnnette JF-2 is a lightweight hand launched fixed-wing drone that is
+          simple to fly and is designed for surveillance and reconnaissance
+          operations.
+        </p>
+      </div>
+      <div class="right"></div>
+    </div>
+    <div class="bgimg-2">
+      <div class="left2">
+      <!-- <h2 class="jf-2-heading"> JF-2</h2>
+      <p class="johnnette-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+        tempora sapiente cum dolores, ab voluptatum vero aperiam! Asperiores
+        eveniet voluptatem ullam, velit illo nesciunt molestiae, omnis
+        obcaecati harum, nisi fugit!
+      </p> -->
+      </div>
+      <div class="right"></div>
+    </div>
+
+    <div class="bgimg-3">
+      <div class="left3">
+        <h4>Section-3<span> Technology </span></h4>
+        <p class="johnnette-text">
+          Johnnette JF-2 is a lightweight hand launched fixed-wing drone that is
+          simple to fly and is designed for surveillance and reconnaissance
+          operations.
+        </p>
+      </div>
+      <div class="right"></div>
+    </div>
+    <div class="bgimg-4">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color: transparent; font-size: 25px; color: #f7f7f7"
+          >SCROLL UP</span
+        >
+      </div>
+    </div>
+
+    <!-- <script>
+  // Get a reference to the .left element
+const leftElement = document.querySelector('.left');
+
+// Calculate the scroll position at which you want to change the position
+const scrollPositionToChange = 200; // Change this value as needed
+
+// Add a scroll event listener
+window.addEventListener('scroll', () => {
+  // Get the current scroll position
+  const scrollPosition = window.scrollY;
+
+  // Check if the scroll position has reached the desired value
+  if (scrollPosition >= scrollPositionToChange) {
+    // Change the position to 'relative' or 'static'
+    leftElement.style.position = 'static'; // You can use 'static' if needed
+  } else {
+    // Revert to 'fixed' when scrolling up
+    leftElement.style.position = 'fixed';
+  }
+});
+
+  </script> -->
+    <!-- <script>
+    // Get a reference to the .left element
+const leftElement = document.querySelector('.left');
+
+// Get a reference to the .johnnette-text element
+const johnnetteText = document.querySelector('.johnnette-text');
+
+// Calculate the scroll position at which you want to change the position
+const scrollPositionToChange = 200; // Change this value as needed
+
+// Add a scroll event listener
+window.addEventListener('scroll', () => {
+  // Get the current scroll position
+  const scrollPosition = window.scrollY;
+
+  // Check if the scroll position has reached the desired value
+  if (scrollPosition >= scrollPositionToChange) {
+    // Change the position to 'relative' or 'static'
+    leftElement.style.position = 'relative'; // You can use 'static' if needed
+
+    // Erase the text by setting it to an empty string
+    johnnetteText.textContent = '';
+  } else {
+    // Revert to 'fixed' when scrolling up
+    leftElement.style.position = 'fixed';
+
+    // Restore the text
+    johnnetteText.textContent = 'Johnnette JF-2 is a lightweight hand-launched fixed-wing drone that is simple to fly and is designed for surveillance and reconnaissance operations.';
+  }
+});
+
+  </script> -->
+
+    <!-- new js code for implementation -->
+
+
+<script>
+    // Get a reference to the .left element
+    const leftElement = document.querySelector(".left");
+
+    // Get a reference to the .johnnette-text element
+    const johnnetteText = document.querySelector(".johnnette-text");
+
+    // Define the scroll position at which you want to change the text
+    const scrollPositionToChangeText = 450; // Change this value as needed
+
+    // Add a scroll event listener
+    window.addEventListener("scroll", () => {
+      // Get the current scroll position
+      const scrollPosition = window.scrollY;
+      // Check if the scroll position has reached the desired value
+      if (scrollPosition >= scrollPositionToChangeText) {
+        // Change the text content
+        johnnetteText.textContent = "Its payloads includes a high-definition day camera and Thermal Imaging camera which make it ideal for day and night operations. Johnnette JF-2 is a cost-effective, stealthy, Man portable Soldier Drone and has an endurance of 90 Minutes. It has crash proof avionics bay, anti-jamming and anti-spoofing features which make it an ideal solution for land forces.";
+      } else {
+        // Restore the original text content
+        johnnetteText.textContent =
+          "Johnnette JF-2 is a lightweight hand-launched fixed-wing drone that is simple to fly and is designed for surveillance and reconnaissance operations.";
+      }
+
+      // Always keep the .left element fixed
+      if (scrollPosition >= scrollPositionToChangeText) {
+        leftElement.style.position = "fixed";
+      } else {
+        leftElement.style.position = "fixed";
+      }
+    });
+</script>
+
+</body>
+</html>
+

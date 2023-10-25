@@ -3,67 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Johnnette JF-2</title>
+    <title>Base File</title>
     <link rel="stylesheet" href="/css/base.css" />
   </head>
   <body>
- 
+    <h1>Johnnette <span> Technology </span></h1>
     <div class="bgimg-1">
-      <div class="left">
-        <h1>Johnnette <span> Technology </span></h1>
+      <div class="left1">
+        <!-- <h1>Johnnette <span> Technology </span></h1> -->
         <p class="johnnette-text">
           Johnnette JF-2 is a lightweight hand launched fixed-wing drone that is
           simple to fly and is designed for surveillance and reconnaissance
-          operations. Its payloads includes a high-definition day camera and
-          Thermal Imaging camera which make it ideal for day and night
           operations.
-          <br /><br />
-          Johnnette JF-2 is a cost-effective, stealthy, backpack Soldier Drone
-          that can fly up to the distance of 40 km with live video transmission
-          of 10 km and an endurance of 1 hour.
         </p>
       </div>
       <div class="right"></div>
     </div>
     <div class="bgimg-2">
-      <div class="left1">
-        <h2 class="jf-2-heading"> JF-2</h2>
-        <p class="johnnette-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-          tempora sapiente cum dolores, ab voluptatum vero aperiam! Asperiores
-          eveniet voluptatem ullam, velit illo nesciunt molestiae, omnis
-          obcaecati harum, nisi fugit! Distinctio perspiciatis nesciunt, maxime
-          corrupti quidem ea. Dolores, voluptatum optio. Quidem, nisi officia
-          praesentium at ipsam pariatur asperiores beatae vitae facere quasi
-          error vel fuga porro quis, perferendis suscipit voluptatum. Distinctio
-          ad repellendus molestiae veniam quisquam, cupiditate animi voluptates
-          nihil amet repudiandae eveniet ullam ipsam ut facere placeat mollitia
-          necessitatibus voluptas libero suscipit. 
-          <br><br>
-          Culpa error suscipit maioresaspernatur libero nobis? Reiciendis dolor suscipit adipisci. Inventore
-          similique quam atque? A, sit. Provident quae unde iste animi deleniti
-          ut quidem, magni reiciendis sequi possimus delectus perspiciatis
-          neque, illo at omnis. Ut, suscipit!
-        </p>
+      <div class="left2">
+      <h2 class="jf-2-heading"> JF-2</h2>
+      <p class="johnnette-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+        tempora sapiente cum dolores, ab voluptatum vero aperiam! Asperiores
+        eveniet voluptatem ullam, velit illo nesciunt molestiae, omnis
+        obcaecati harum, nisi fugit!
+      </p>
       </div>
       <div class="right"></div>
     </div>
 
     <div class="bgimg-3">
-      <div class="caption">
-        <span
-          class="border"
-          style="background-color: transparent; font-size: 25px; color: #f7f7f7">Section 3</span>
+      <div class="left3">
+      <h2 class="jf-2-heading" style="width: 150px;"> JF-2 bgimg-3</h2>
+      <p class="johnnette-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+        tempora sapiente cum dolores, ab voluptatum vero aperiam! Asperiores
+        eveniet voluptatem ullam, velit illo nesciunt molestiae, omnis
+        obcaecati harum, nisi fugit!
+      </p>
       </div>
+      <div class="right"></div>
     </div>
     <div class="bgimg-4">
       <div class="caption">
         <span
           class="border"
           style="background-color: transparent; font-size: 25px; color: #f7f7f7"
-          >SCROLL UP</span>
+          >SCROLL UP</span
+        >
       </div>
     </div>
-  </body>
+
+
+
+    <!-- the old js code is in humains-trial.html for implementation -->
+<!--  -->
+<script>
+  // Get a reference to the .left2 element
+const left2Element = document.querySelector('.left2');
+
+// Calculate the scroll position at which you want to change the position
+//const scrollPositionToChange = 550; // Change this value as needed
+const scrollPositionToChange2 = 900; // Change this value as needed
+
+// Add a scroll event listener
+window.addEventListener('scroll', () => {
+  // Get the current scroll position
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= scrollPositionToChange2) {
+    // Change the position to 'fixed'
+    left2Element.style.position = 'fixed';
+    left2Element.style.top = '0';
+  } else {
+    // Revert to 'relative' when scrolling up
+    left2Element.style.position = 'relative';
+  }
+});
+
+// for bgimg-3 we have this js code
+// Get a reference to the .left3 element
+const left3Element = document.querySelector('.left3');
+
+// Calculate the scroll position at which you want to change the position
+const scrollPositionToChange3 = 1800; // Change this value as needed
+
+// Add a scroll event listener
+window.addEventListener('scroll', () => {
+  // Get the current scroll position
+  const scrollPosition3 = window.scrollY; // Use scrollPosition3 instead of scrollPosition
+
+  if (scrollPosition3 >= scrollPositionToChange3) {
+    // Change the position to 'fixed'
+    left3Element.style.position = 'fixed';
+    left3Element.style.top = '0';
+  } else {
+    // Revert to 'relative' when scrolling up
+    left3Element.style.position = 'relative';
+  }
+});
+
+
+</script>
+</body>
 </html>
-using javascript or css it is possible the text comes from down to up with the div on scrolling.
+

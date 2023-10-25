@@ -23,10 +23,10 @@ html {
 }
 
 .bgimg-1 {
-  /* background-image: url("/images/front-blur.png/"); */
-  background-image: url("/images/girl-1.webp");
+  /* background-image: url("/images/girl-1.webp"); */
+  background-image: url("/images/front-blur.png");
   display: flex;
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .left1{
@@ -46,15 +46,12 @@ html {
 
 h1{
   border-bottom: 2px solid red;
-  width: 14%;
+  width: 29%;
   margin: 0;
-  /* position: absolute; */
-  position: fixed;
-  top: 38vh;
+  position: absolute;
+  top: 40vh;
   /* top: 250px; */
-  left: 136px;
   font-family: 'Oswald', sans-serif;
-  z-index: 500;
 }
  
 .johnnette-text{
@@ -66,8 +63,8 @@ h1{
 /******************************** second section started from here **************************/
 
 .bgimg-2 {
-  /* background-image: url("/images/front-clear.png"); */
-  background-image: url("/images/girl-2.webp");
+  /* background-image: url("/images/girl-2.webp"); */
+  background-image: url("/images/front-clear.png");
   display: flex;
 }
 
@@ -76,12 +73,11 @@ h1{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   padding-left: 135px;
 }
 
 .jf-2-heading{
-  padding-top: 25px;
   width: 50px;
   margin: 0;
   border-bottom: 2px solid red;
@@ -98,22 +94,20 @@ h1{
 
 .bgimg-3 {
   background-image: url("/images/girl-3.webp");
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
-  /* z-index: 4; */
 }
 .left3{
     width: 50%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding-left: 135px;
 }
 .bgimg-4 {
   background-image: url("/images/girl-4.webp");
   height: 100vh;
-  z-index: 445454645465;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
