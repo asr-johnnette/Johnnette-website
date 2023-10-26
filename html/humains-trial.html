@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base File</title>
-    <link rel="stylesheet" href="/css/humains-trial.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/humains-trial-mq.css">
   </head>
   <body>
     <h1>Johnnette <span> Technology </span></h1>
@@ -15,7 +16,6 @@
           Johnnette JF-2 is a lightweight hand launched fixed-wing drone that is
           simple to fly and is designed for surveillance and reconnaissance
           operations.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur accusamus eveniet alias vero? Ipsa reprehenderit cumque alias, obcaecati beatae veniam nisi quam dolore magnam ea eligendi perferendis culpa, deserunt incidunt!
         </p>
       </div>
       <div class="right"></div>
@@ -28,8 +28,6 @@
         tempora sapiente cum dolores, ab voluptatum vero aperiam! Asperiores
         eveniet voluptatem ullam, velit illo nesciunt molestiae, omnis
         obcaecati harum, nisi fugit!
-        <br>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum necessitatibus labore ea ex architecto earum iste optio sunt eveniet deserunt facere autem laudantium tenetur et blanditiis, magnam reprehenderit repellendus? Officia.
       </p>
       </div>
       <div class="right"></div>
@@ -58,55 +56,56 @@
     </div>
 
 
-<script>
-  // Get a reference to the .left2 element
-const left2Element = document.querySelector('.left2');
-
-// Calculate the scroll position at which you want to change the position
-//const scrollPositionToChange = 550; // Change this value as needed
-const scrollPositionToChange2 = 900; // Change this value as needed
-
-// Add a scroll event listener
-window.addEventListener('scroll', () => {
-  // Get the current scroll position
-  const scrollPosition = window.scrollY;
-
-  if (scrollPosition >= scrollPositionToChange2) {
-    // Change the position to 'fixed'
-    left2Element.style.position = 'fixed';
-
-    //its value is set to zero because we set justify-content:center if we don't use justify-content then top value is 400px
-    left2Element.style.top = '0';
-  } else {
-    // Revert to 'relative' when scrolling up
-    left2Element.style.position = 'relative';
-  }
-});
-
-// for bgimg-3 we have this js code
-// Get a reference to the .left3 element
-const left3Element = document.querySelector('.left3');
-
-// Calculate the scroll position at which you want to change the position
-const scrollPositionToChange3 = 1800; // Change this value as needed
-
-// Add a scroll event listener
-window.addEventListener('scroll', () => {
-  // Get the current scroll position
-  const scrollPosition3 = window.scrollY; // Use scrollPosition3 instead of scrollPosition
-
-  if (scrollPosition3 >= scrollPositionToChange3) {
-    // Change the position to 'fixed'
-    left3Element.style.position = 'fixed';
-    left3Element.style.top = '0';
-  } else {
-    // Revert to 'relative' when scrolling up
-    left3Element.style.position = 'relative';
-  }
-});
 
 
-</script>
-</body>
-</html>
+    <!--========================== javascript started from here ========================-->
+    <script>
+      // Get a reference to the .left2 element
+      const left2Element = document.querySelector(".left2");
 
+      // Calculate the scroll position at which you want to change the position
+      //const scrollPositionToChange = 550; // Change this value as needed
+      const scrollPositionToChange2 = 1000; // Change this value as needed
+
+      // Add a scroll event listener
+      window.addEventListener("scroll", () => {
+        // Get the current scroll position
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition >= scrollPositionToChange2) {
+          // Change the position to 'fixed'
+          left2Element.style.position = "fixed";
+
+          //its value is set to zero because we set justify-content:center
+          //if we don't use justify-content then top value is 400px
+          left2Element.style.top = "0";
+          //we can use top left and right according to our use
+          //left2Element.style.left='250px'
+        } else {
+          // Revert to 'relative' when scrolling up
+          left2Element.style.position = "relative";
+        }
+      });
+
+      // for bgimg-3 we have this js code
+      // Get a reference to the .left3 element
+      const left3Element = document.querySelector(".left3");
+
+      // Calculate the scroll position at which you want to change the position
+      const scrollPositionToChange3 = 2000; // Change this value as needed
+
+      // Add a scroll event listener
+      window.addEventListener("scroll", () => {
+        // Get the current scroll position
+        const scrollPosition3 = window.scrollY; // Use scrollPosition3 instead of scrollPosition
+
+        if (scrollPosition3 >= scrollPositionToChange3) {
+          // Change the position to 'fixed'
+          left3Element.style.position = "fixed";
+          left3Element.style.top = "0";
+        } else {
+          // Revert to 'relative' when scrolling up
+          left3Element.style.position = "relative";
+        }
+      });
+    </script>

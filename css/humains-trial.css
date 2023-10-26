@@ -18,8 +18,18 @@ html {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  
+  background-size: cover; 
+}
+
+h1{
+  border-bottom: 2px solid red;
+  width: 14%;
+  margin: 0;
+  position: fixed;
+  top: 35vh;
+  left: 136px;
+  font-family: 'Oswald', sans-serif;
+  z-index: 500;
 }
 
 .bgimg-1 {
@@ -38,22 +48,14 @@ html {
 }
 
 .right{
-  width: 50%;
+  width: 40%;
   height: 100vh;
+  /* background-color: aliceblue; */
 }
 
-h1{
-  border-bottom: 2px solid red;
-  width: 14%;
-  margin: 0;
-  position: fixed;
-  top: 36vh;
-  left: 136px;
-  font-family: 'Oswald', sans-serif;
-  z-index: 500;
-}
+
  
-.johnnette-text{
+.johnnette-text1{
   width: 80%;
   font-size: 18px;
   font-family: 'Oswald', sans-serif;
@@ -74,6 +76,9 @@ h1{
   justify-content: center;
   padding-left: 135px;
 }
+.content2{
+  width: 100%;
+}
 
 .jf-2-heading{
   padding-top: 25px;
@@ -83,7 +88,7 @@ h1{
   font-family: 'Oswald';
 }
 
-.johnnette-text1{
+.johnnette-text2{
   width: 80%;
   font-size: 18px;
   font-family: 'Oswald', sans-serif;
@@ -96,7 +101,8 @@ h1{
   background-image: url("/images/girl-3.webp");
   display: flex;
 }
-.left3{
+
+.left3 {
   width: 50%;
   height: 100vh;
   display: flex;
@@ -112,12 +118,40 @@ h1{
   z-index: 445454645465;
 }
 
+.bgimg-4 .left4{
+  /* font-size: 75px; */
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+  top: 50%;
+  left: 43%;
+
+}
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+/* @media only screen and (max-device-width: 1024px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3,
   .bgimg-4 {
     background-attachment: scroll;
+  }
+} */
+
+
+@media only screen and (min-width: 2400px){
+  .bgimg-1{
+      height: 100vh;
+  }
+  h1{
+      top: 32vh;
+  }
+  .johnnette-text{
+
+      font-size: 20px;
+  }
+}
+@media only screen and (max-width:1024px){
+  h1{
+      width: 25%;
   }
 }
