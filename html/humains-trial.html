@@ -4,108 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base File</title>
-    <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/humains-trial-mq.css">
+    <link rel="stylesheet" href="/css/humains-trial.css" />
+    <link rel="stylesheet" href="/css/humains-trial-mq.css" />
+    <script src="/humains.js"></script>
   </head>
   <body>
-    <h1>Johnnette <span> Technology </span></h1>
-    <div class="bgimg-1">
-      <div class="left1">
-        <!-- <h1>Johnnette <span> Technology </span></h1> -->
-        <p class="johnnette-text">
-          Johnnette JF-2 is a lightweight hand launched fixed-wing drone that is
-          simple to fly and is designed for surveillance and reconnaissance
-          operations.
-        </p>
-      </div>
-      <div class="right"></div>
+    <div class="main" style="width: 100%; height: 100vh; background-color: rgb(155, 204, 247); position: relative; z-index: 15;">
+      <h3 style="text-align: center; margin: 0">Video landing page</h3>
     </div>
-    <div class="bgimg-2">
-      <div class="left2">
-      <h2 class="jf-2-heading"> JF-2</h2>
-      <p class="johnnette-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-        tempora sapiente cum dolores, ab voluptatum vero aperiam! Asperiores
-        eveniet voluptatem ullam, velit illo nesciunt molestiae, omnis
-        obcaecati harum, nisi fugit!
-      </p>
+    <div class="main" style="width: 100%; height: 100vh; background-color: rgb(0, 92, 54); position: relative; z-index: 15;">
+      <h3 style="text-align: center;position:absolute; top:50%; left:45%;">Video landing page</h3>
+    </div>
+    <div class="container">
+      <h1 class="johnnette-heading hide-text">Johnnette Technology</h1>
+      <div class="bgimg-1">
+        <div class="left1">
+          <!-- <h1>Johnnette <span> Technology </span></h1> -->
+          <p class="johnnette-text">
+            Johnnette JF-2 is a lightweight hand launched fixed-wing drone that
+            is simple to fly and is designed for surveillance and reconnaissance
+            operations. Its payloads includes a high-definition day camera and
+            Thermal Imaging camera which make it ideal for day and night
+            operations.
+            <br/>
+            <br/>
+            Johnnette JF-2 is a cost-effective, stealthy, Man portable Soldier
+            Drone and has an endurance of 90 Minutes. It has crash proof
+            avionics bay, anti-jamming and anti-spoofing features which make it
+            an ideal solution for land forces.
+          </p>
+        </div>
+        <div class="right"></div>
       </div>
-      <div class="right"></div>
+      <div class="bgimg-2">
+        <div class="left2">
+          <h2 class="jf-2-heading">JF-2</h2>
+          <p class="johnnette-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+            tempora sapiente cum dolores, ab voluptatum vero aperiam! Asperiores
+            eveniet voluptatem ullam, velit illo nesciunt molestiae, omnis
+            obcaecati harum, nisi fugit!
+          </p>
+        </div>
+        <div class="right"></div>
+      </div>
+
+      <div class="bgimg-3">
+        <div class="left3 hide-text">
+          <h2 class="jf-2-heading" style="width: 150px">JF-2 bgimg-3</h2>
+          <p class="johnnette-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+            tempora sapiente cum dolores, ab voluptatum vero aperiam! Asperiores
+            eveniet voluptatem ullam, velit illo nesciunt molestiae, omnis
+            obcaecati harum, nisi fugit!
+          </p>
+        </div>
+        <div class="right"></div>
+      </div>
+      <div class="bgimg-4">
+        <div class="caption">
+          <span
+            class="border"style="background-color: transparent; font-size: 25px; color: #f7f7f7;">
+            SCROLL UP</span>
+        </div>
+      </div>
     </div>
 
-    <div class="bgimg-3">
-      <div class="left3">
-      <h2 class="jf-2-heading" style="width: 150px;"> JF-2 bgimg-3</h2>
-      <p class="johnnette-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-        tempora sapiente cum dolores, ab voluptatum vero aperiam! Asperiores
-        eveniet voluptatem ullam, velit illo nesciunt molestiae, omnis
-        obcaecati harum, nisi fugit!
-      </p>
-      </div>
-      <div class="right"></div>
-    </div>
-    <div class="bgimg-4">
-      <div class="caption">
-        <span
-          class="border"
-          style="background-color: transparent; font-size: 25px; color: #f7f7f7"
-          >SCROLL UP</span
-        >
-      </div>
-    </div>
-
-
-
-
+    
     <!--========================== javascript started from here ========================-->
+
+
     <script>
-      // Get a reference to the .left2 element
-      const left2Element = document.querySelector(".left2");
-
-      // Calculate the scroll position at which you want to change the position
-      //const scrollPositionToChange = 550; // Change this value as needed
-      const scrollPositionToChange2 = 1000; // Change this value as needed
-
-      // Add a scroll event listener
+      const headingElement = document.querySelector(".johnnette-heading");
       window.addEventListener("scroll", () => {
-        // Get the current scroll position
-        const scrollPosition = window.scrollY;
+        const scrollPosition1 = window.scrollY;
+        const threshold = 3420 // 300vh
 
-        if (scrollPosition >= scrollPositionToChange2) {
-          // Change the position to 'fixed'
-          left2Element.style.position = "fixed";
-
-          //its value is set to zero because we set justify-content:center
-          //if we don't use justify-content then top value is 400px
-          left2Element.style.top = "0";
-          //we can use top left and right according to our use
-          //left2Element.style.left='250px'
+        if (scrollPosition1 >= threshold) {
+          headingElement.classList.add("hide-text");
         } else {
-          // Revert to 'relative' when scrolling up
-          left2Element.style.position = "relative";
+          headingElement.classList.remove("hide-text");
         }
       });
 
-      // for bgimg-3 we have this js code
-      // Get a reference to the .left3 element
-      const left3Element = document.querySelector(".left3");
+      //for hiding the text
+      const left3Element1 = document.querySelector('.left3');
 
-      // Calculate the scroll position at which you want to change the position
-      const scrollPositionToChange3 = 2000; // Change this value as needed
-
-      // Add a scroll event listener
-      window.addEventListener("scroll", () => {
-        // Get the current scroll position
-        const scrollPosition3 = window.scrollY; // Use scrollPosition3 instead of scrollPosition
-
-        if (scrollPosition3 >= scrollPositionToChange3) {
-          // Change the position to 'fixed'
-          left3Element.style.position = "fixed";
-          left3Element.style.top = "0";
+      window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const threshold = 2700; // Adjust the threshold (in pixels) as needed
+      
+        if (scrollPosition >= threshold) {
+          left3Element1.classList.add('hide-text');
         } else {
-          // Revert to 'relative' when scrolling up
-          left3Element.style.position = "relative";
+          left3Element1.classList.remove('hide-text');
         }
       });
     </script>
+  </body>
+</html>

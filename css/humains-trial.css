@@ -21,6 +21,7 @@ html {
   background-size: cover; 
 }
 
+
 h1{
   border-bottom: 2px solid red;
   width: 14%;
@@ -31,10 +32,22 @@ h1{
   font-family: 'Oswald', sans-serif;
   z-index: 500;
 }
+h1 {
+  transition: opacity 0.5s;
+}
 
+.hide-text {
+  opacity: 0;
+  display: none;
+}
+.container{
+  position: static;
+}
 .bgimg-1 {
-  background-image: url("/images/girl-1.webp");
+  /* background-image: url("/images/girl-1.webp"); */
+  background-image: url("/images/jf2_intro.png");
   display: flex;
+  background-attachment: scroll;
 }
 
 .left1{
@@ -44,7 +57,8 @@ h1{
   flex-direction: column;
   justify-content: center;
   padding-left: 135px;
-  position: fixed;
+  /* position: fixed;
+  top: 2%; */
 }
 
 .right{
@@ -61,10 +75,12 @@ h1{
   font-family: 'Oswald', sans-serif;
 }
 
+
 /******************************** second bgimg css starts form here **************************/
 
 .bgimg-2 {
-  background-image: url("/images/girl-2.webp");
+  /* background-image: url("/images/girl-2.webp"); */
+  background-image: url("/images/jf2_intro2.png");
   display: flex;
 }
 
@@ -98,7 +114,7 @@ h1{
 
 /********************************* third bgimg css starts from here **************************/
 .bgimg-3 {
-  background-image: url("/images/girl-3.webp");
+  background-image: url("/images/jf2_intro3.png");
   display: flex;
 }
 
@@ -110,12 +126,21 @@ h1{
   justify-content: center;
   padding-left: 135px;
 }
+.left3 {
+  transition: opacity 0.5s;
+  opacity: 1; /* Set initial opacity to fully visible */
+}
+
+.hide-text {
+  opacity: 0; /* When hidden, set opacity to 0 */
+}
+
 
 /********************************* third bgimg css ends here **************************/
 .bgimg-4 {
   background-image: url("/images/girl-4.webp");
   height: 100vh;
-  z-index: 445454645465;
+  /* z-index: 445454645465; */
 }
 
 .bgimg-4 .left4{
@@ -138,7 +163,7 @@ h1{
 } */
 
 
-@media only screen and (min-width: 2400px){
+/* @media only screen and (min-width: 2400px){
   .bgimg-1{
       height: 100vh;
   }
@@ -154,4 +179,8 @@ h1{
   h1{
       width: 25%;
   }
+} */
+
+.left3 {
+  display: block; /* You can initially set it to "block" or adjust as needed */
 }

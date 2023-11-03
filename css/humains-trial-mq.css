@@ -4,6 +4,7 @@
     }
     h1{
         top: 40vh;
+        z-index: 10;
     }
     .johnnette-text{
 
